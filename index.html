@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог книг</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="page-header">
+        <h1>📚 Каталог книг</h1>
+        <p class="subtitle">
+            Найдите нужную книгу, отсортируйте по названию или цене
+        </p>
+    </header>
+
+    <div class="controls">
+
+        <div class="search-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 aria-hidden="true">
+                <circle cx="11" cy="11" r="7"></circle>
+                <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
+            </svg>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Поиск по книге или автору..."
+                autocomplete="off"
+            >
+        </div>
+
+        <select id="sort">
+            <option value="title-asc">Название А-Я</option>
+            <option value="title-desc">Название Я-А</option>
+            <option value="price-asc">Цена ↑</option>
+            <option value="price-desc">Цена ↓</option>
+        </select>
+
+    </div>
+
+    <p id="status">Загрузка книг...</p>
+
+    <div id="books" class="books"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
