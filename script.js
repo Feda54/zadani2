@@ -1,7 +1,7 @@
 const SUPABASE_URL = "https://coimqydotznckkoeyfyg.supabase.co";
 
-// СЮДА ВСТАВЬ СВОЙ PUBLISHABLE KEY
-const SUPABASE_KEY = "sb_publishable_QkyOKSGkreCyGkYpl7WHwA_m6LabLyE";
+// ВАШ PUBLISHABLE KEY
+const SUPABASE_KEY = "sb_publishable_FcCJBPG-Vg0SiaEVaVd_ZQ_AE_wEZl1";
 
 const client = supabase.createClient(
     SUPABASE_URL,
